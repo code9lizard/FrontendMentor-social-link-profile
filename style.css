@@ -23,6 +23,7 @@ main {
     max-width: 310px;
     width: 80%;
     border-radius: 10px;
+    row-gap: 10px;
 }
 
 .profile-info {
@@ -50,12 +51,19 @@ main {
     border: none;
     border-radius: 5px;
     font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
 }
 
 .link:hover {
     cursor: pointer;
     background-color: hsl(75, 94%, 57%);
     color: hsl(0, 0%, 8%);
+}
+
+.name {
+    font-weight: 400;
+    font-size: 25px;
 }
 
 .avatar {
@@ -65,7 +73,7 @@ main {
 
 .description {
     font-size: 14px;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .attribution {
@@ -75,5 +83,9 @@ main {
 @media (max-width: 720px) {
     .profile {
         padding: 20px;
+    }
+
+    .link {
+        padding: 12px 0; /* Reduce button padding slightly on small screens */
     }
 }
